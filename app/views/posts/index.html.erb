@@ -1,0 +1,9 @@
+<h1>Blog Posts</h1>
+
+<% @posts.each do |post|%>
+    <div class='well'>
+    <h3><%= post.title %></h3>
+        <h3><%= post.body %></h3>
+        <%= link_to 'Read More', post_path(post), :class => 'btn btn-dark' %>
+    </div>
+<% end%>
